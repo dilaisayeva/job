@@ -1,0 +1,132 @@
+.rightside_content .search_filter {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 1px 10px 15px -15px #11111165;
+}
+.rightside_content .search_filter form {
+  display: flex;
+}
+.rightside_content .search_filter form .form_actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.rightside_content .search_filter form .form_actions .vertical-divider {
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+}
+.rightside_content .search_filter form input {
+  flex-grow: 1;
+  border: none;
+  color: var(--clr-primary);
+  font-size: 17px;
+}
+.rightside_content .search_filter form input::placeholder {
+  color: var(--clr-primary);
+}
+
+.rightside_content .search_filter form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.rightside_content .search_filter form .filter_btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--clr-primary);
+}
+
+.rightside_content .search_filter form .filter_btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+.rightside_content .search_filter form .search_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vacancy_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.vacancy_item .left_side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vacancy_item .left_side .image {
+  width: 45px;
+  height: 45px;
+  background-color: var(--clr-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: white;
+}
+.vacancy_item .left_side .left_side-content h4 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.vacancy_item .left_side .left_side-content p {
+  font-size: 14px;
+  color: var(--clr-gray);
+}
+
+.vacancy_item .right_side {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.vacancy_item .view_count {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.vacancy_item .like {
+  display: flex;
+  align-items: center;
+}
+.vacancy_item .vertical-divider {
+  height: 16px;
+  background-color: var(--clr-gray);
+  width: 1px;
+}
+
+.vacancy_item .right_side {
+  color: var(--clr-gray);
+  font-size: 13px;
+}
+
+.rightside_vacancies {
+  overflow-y: scroll;
+  height: calc(100vh - 55.6px);
+}
+
+.rightside_vacancies::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.rightside_vacancies::-webkit-scrollbar-track {
+  background: #f6f6f6;
+}
+
+/* Handle */
+.rightside_vacancies::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.rightside_vacancies::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
